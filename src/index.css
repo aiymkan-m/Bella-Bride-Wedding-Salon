@@ -1,0 +1,65 @@
+:root {
+  --primary-font: 'Cormorant Garamond', Georgia, serif;
+  --body-font: 'Montserrat', system-ui, -apple-system, sans-serif;
+
+  --color-white: #ffffff;
+  --color-ivory: #faf7f5;
+  --color-beige: #f4ece8;
+  --color-pink-soft: #fbf0f0;
+  --color-pink-accent: #e8c5c5;
+  --color-rose: #b87b7b;
+  --color-rose-dark: #985b5b;
+  --color-text-dark: #2c2c2c;
+  --color-text-muted: #666666;
+  --color-border: #e6ded8;
+
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 12px 32px rgba(184, 123, 123, 0.12);
+
+  --transition: all 0.3s ease;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--body-font);
+  color: var(--color-text-dark);
+  background-color: var(--color-ivory);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, .font-serif {
+  font-family: var(--primary-font);
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition);
+}
+
+button {
+  font-family: var(--body-font);
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: var(--transition);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
